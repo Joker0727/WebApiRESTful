@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiRESTful</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiRESTful.SwaggerConfig.GetXmlCommentsPath">
+            <summary>
+            ¶ÁÈ¡WebApiRESTful.XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRESTful.Commons.MyTool.MapPath(System.String)">
+            <summary>
+            获取文件路径
+            </summary>
+            <param name="strPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRESTful.Controllers.HomeController.Index(System.String)">
+            <summary>
+            测试一般类型的参数
+            </summary>
+            <param name="str">测试参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRESTful.Controllers.HomeController.ObjectDemo(WebApiRESTful.Models.User)">
+            <summary>
+            测试传递对象参数
+            </summary>
+            <param name="user">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRESTful.Controllers.HomeController.UpLoadFile">
+            <summary>
+            上传文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiRESTful.Controllers.HomeController.ChooseType(WebApiRESTful.Enums.TypeEnums)">
+            <summary>
+            枚举实现下拉框选择
+            </summary>
+            <param name="type">类型</param>
+            <returns></returns>
+        </member>
+        <member name="F:WebApiRESTful.Enums.TypeEnums.Type1">
+            <summary>
+            类型一
+            </summary>
+        </member>
+        <member name="F:WebApiRESTful.Enums.TypeEnums.Type2">
+            <summary>
+            类型二
+            </summary>
+        </member>
+        <member name="T:WebApiRESTful.Models.AuthInfo">
+            <summary>
+            表示jwt的payload
+            </summary>
+        </member>
+        <member name="P:WebApiRESTful.Models.AuthInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:WebApiRESTful.Models.AuthInfo.Roles">
+            <summary>
+            角色列表，可以用于记录该用户的角色,相当于claims的概念(如不清楚什么事claim，请google一下"基于声明的权限控制")
+            </summary>
+        </member>
+        <member name="P:WebApiRESTful.Models.AuthInfo.IsAdmin">
+            <summary>
+            是否是管理员
+            </summary>
+        </member>
+        <member name="P:WebApiRESTful.Models.AuthInfo.ExpiryDateTime">
+            <summary>
+            口令过期时间
+            </summary>
+        </member>
+        <member name="T:WebApiRESTful.Secure.ApiAuthorizeAttribute">
+            <summary>
+            权限特性
+            </summary>
+        </member>
+    </members>
+</doc>
